@@ -46,8 +46,7 @@ function game() {
     for (let i = 0; i < 5; i++) {
         let playerHand = prompt("What's your play?");
         if (handPossibilites.includes(playerHand.toLowerCase())) {
-            computerPlay = computerPlay();
-            console.log(playRound(playerHand, computerPlay));
+            console.log(playRound(playerHand, computerPlay()));
         } else {
             console.log("You lost this round because you misstyped");
         }
