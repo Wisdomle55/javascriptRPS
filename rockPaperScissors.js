@@ -45,10 +45,12 @@ function playRound(playerHand, computerHand) {
 function game() {
     console.log("Do you feel lucky punk, well do you?");
     for (let i = 0; i < 5; i++) {
-        var playerHand = prompt("What's your play?");
-        var computerPlay = computerPlay();
+        let playerHand = prompt("What's your play?");
+        computerPlay2 = computerPlay();
+
         if (handPossibilites.includes(playerHand.toLowerCase())) {
-            console.log(playRound(playerHand, computerPlay));
+            let result = playRound(playerHand, computerPlay2);
+            console.log(result);
         } else {
             console.log("You lost this round because you misstyped");
         }
