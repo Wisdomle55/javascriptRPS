@@ -2,6 +2,8 @@ Math;
 
 circleRadius = 4;
 
+let randomCommit;
+
 circleCircumference = 2*Math.PI*circleRadius;
 console.log(`Circule circunference is ${circleCircumference}`);
 
