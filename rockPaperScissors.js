@@ -1,6 +1,7 @@
 
 var handPossibilites = ["rock", "paper", "scissors"];
 let userWins = 0;
+let computerPlay;
 
 
 function computerPlay() {
