@@ -45,8 +45,8 @@ function game() {
     console.log("Do you feel lucky punk, well do you?");
     for (let i = 0; i < 5; i++) {
         let playerHand = prompt("What's your play?");
+        let computerPlay = computerPlay();
         if (handPossibilites.includes(playerHand.toLowerCase())) {
-            let computerPlay = computerPlay();
             console.log(playRound(playerHand, computerPlay));
         } else {
             console.log("You lost this round because you misstyped");
